@@ -5,7 +5,7 @@ echo "Welcome to email pattern problem"
 shopt -s extglob
 
 read -p "enter Email: " email
-pat1='^[a-zA-z0-9]{1,}$'
+pat1='^[a-zA-z0-9]+$'
 
 if [[ $email =~ $pat1 ]]
 then
