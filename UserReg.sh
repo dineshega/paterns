@@ -2,10 +2,10 @@
 
 echo "Welcome to User Registration Problem"
 
-read -p "Enter First Name: " Fname
-patfname='^[A-Z]{3,}$'
+read -p "Enter First Name and last lame: " FLname
+patflname='^[A-Z]{3,}[ ]?[A-Z]{3,}$'
 
-if [[ $Fname =~ $patfname ]]
+if [[ $FLname =~ $patflname && $FLname =~ $patflname ]]
 then
 	echo "name registered"
 else
