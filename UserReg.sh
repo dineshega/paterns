@@ -2,14 +2,14 @@
 
 echo "Welcome to User Registration Problem"
 
-read -p "enter mobile number: " mb
-pat1='^((\+){1}91){1}[ ]?[0-9]{10}$'
-# +91 9876543210
-# +919876543210
+shopt -s extglob
 
-if [[ $mb =~ $pat1 ]]
+read -p "Enter password: " pass
+patpass='^[A-za-z]{8,}$'
+
+if [[ $pass =~ $patpass ]]
 then
-	echo "mobile registered"
+	echo "password set"
 else
-	echo "mobile not registered"
-fi
+	echo "passwors not set"
+fi 
