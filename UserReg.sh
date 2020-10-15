@@ -2,12 +2,12 @@
 
 echo "Welcome to User Registration Problem"
 
-read -p "Enter First Name and last lame: " FLname
-patflname='^[A-Z]{3,}[ ]?[A-Z]{3,}$'
+read -p "enter Email: " email
+pat1='^[a-zA-z0-9]+([.+-_][a-zA-Z0-9]+)*@[a-zA-Z0-9]+.[a-z]{2,4}([.][a-z]{2})*$'
 
-if [[ $FLname =~ $patflname && $FLname =~ $patflname ]]
+if [[ $email =~ $pat1 ]]
 then
-	echo "name registered"
+	echo "email registered"
 else
-	echo "name not registered"
+	echo "email not registered"
 fi
